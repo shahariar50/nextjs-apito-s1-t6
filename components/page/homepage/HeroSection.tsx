@@ -1,35 +1,45 @@
 const HeroSection = () => {
   return (
-    <section className="py-xxl-10 pb-0" id="home">
+    <section className="py-0">
       <div
-        className="bg-holder bg-size"
+        className="bg-holder"
         style={{
-          backgroundImage: "url(/img/gallery/hero-header-bg.png)",
-          backgroundPosition: "top center",
-          backgroundSize: "cover",
+          backgroundImage: "url(/img/illustrations/dot.png)",
+          backgroundPosition: "left",
+          backgroundSize: "auto",
+          marginTop: "-105px",
         }}
       ></div>
 
-      <div className="container">
+      <div className="container position-relative">
         <div className="row align-items-center">
-          <div className="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
+          <div className="col-md-5 col-lg-6 order-md-1 pt-8">
             <picture>
               <img
-                className="pt-7 pt-md-0 w-100"
-                src="/img/illustrations/hero.png"
-                alt="hero-header"
+                className="img-fluid"
+                src="/img/illustrations/hero-header.png"
+                alt=""
               />
             </picture>
           </div>
-          <div className="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-8">
-            <h1 className="fw-normal fs-6 fs-xxl-7">A trusted provider of </h1>
-            <h1 className="fw-bolder fs-6 fs-xxl-7 mb-2">courier services.</h1>
-            <p className="fs-1 mb-5">
-              We deliver your products safely to <br />
-              your home in a reasonable time.{" "}
+          <div className="col-md-7 col-lg-6 text-center text-md-start pt-5 pt-md-9">
+            <h1 className="mb-4 display-3 fw-bold">
+              Virtual healthcare <br className="d-block d-lg-none d-xl-block" />
+              for you.
+            </h1>
+            <p className="mt-3 mb-4 fs-1">
+              Trafalgar provides progressive, and affordable
+              <br className="d-none d-lg-block" />
+              healthcare, accessible on mobile and online
+              <br className="d-none d-lg-block" />
+              for everyone
             </p>
-            <a className="btn btn-primary me-2" href="#!" role="button">
-              Get started<i className="fas fa-arrow-right ms-2"></i>
+            <a
+              className="btn btn-lg btn-primary rounded-pill hover-top"
+              href="#"
+              role="button"
+            >
+              Learn more
             </a>
           </div>
         </div>
