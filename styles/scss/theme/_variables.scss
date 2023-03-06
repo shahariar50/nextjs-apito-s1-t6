@@ -38,18 +38,18 @@ $grid-gutter-width: 2rem !default;
 //|   Color System
 //-----------------------------------------------*/
 
-$white: #FFFEFE !default;
-$gray-100: #EBEBF5  !default;
-$gray-200: #DBDBE9  !default;
-$gray-300: #C5C5D2  !default;
-$gray-400: #AFAEBC  !default;
-$gray-500: #9291A1  !default;
-$gray-600:  #7B7A8B !default;
-$gray-700:  #5C5B6C !default;
-$gray-800: #464558  !default;
-$gray-900: #2F2E41  !default;
-$gray-1000: #222132 !default;
-$gray-1100: #11111D !default;
+$white: #fff !default;
+$gray-100:#F5F5F6  !default;
+$gray-200: #EBEBED !default;
+$gray-300: #E1E0E4 !default;
+$gray-400: #D7D6DA !default;
+$gray-500: #CDCCD1 !default;
+$gray-600:  #C3C1C8 !default;
+$gray-700:  #7D7987 !default;
+$gray-800: #4B5D68 !default;
+$gray-900: #4F5665 !default;
+$gray-1000: #272D4E !default;
+$gray-1100: #1F1534 !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -66,6 +66,7 @@ $grays: map-merge(
     '800': $gray-800,
     '900': $gray-900,
     '1000': $gray-1000,
+    '1100': $gray-1100,
     'white': $white,
   ),
   $grays
@@ -74,29 +75,29 @@ $grays: map-merge(
 //*-----------------------------------------------
 //|   Solid Colors
 //-----------------------------------------------*/
-$blue: #0088B4 !default;
-$indigo: #6237FF !default;
-$purple:  #A1B0FC!default;
-$pink: #D42DA3 !default;
-$red: #F95C19 !default;
-$orange: #F17228 !default;
-$yellow:#FFAF0F!default;
-$green: #00BA77 !default;
-$teal: #53F283 !default;
-$cyan: #00CEC2 !default;
-$light: #F0F4F9 !default;
+$blue: #458FF6 !default;
+$indigo: #727cf5 !default;
+$purple: #ad45f6 !default;
+$pink: #f6458e !default;
+$red: #f65445 !default;
+$orange: #f6d845 !default;
+$yellow: #FFBA49 !default;
+$green: #45f6ad !default;
+$teal: #299EF3 !default;
+$cyan: #38B0F5 !default;
+$light: #f9fafd !default;
 
 //*-----------------------------------------------
 //|   Theme Colors
 //-----------------------------------------------*/
-$primary: $red !default;
-$secondary: $blue  !default;
+$primary: $blue !default;
+$secondary: $gray-900 !default;
 $success: $green !default;
-$info: $cyan !default;
+$info: $purple !default;
 $warning: $yellow !default;
-$danger: $red !default;
+$danger: $pink !default;
 $light: $light !default;
-$dark: $gray-1000 !default;
+$dark: $gray-1100 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -117,14 +118,14 @@ $theme-color-interval: 8% !default;
 $theme-colors-soft: () !default;
 $theme-colors-soft: map-merge(
   (
-    'primary': tint-color($primary, 85),
-    'secondary': tint-color($secondary,85),
-    'success': tint-color($success,85),
-    'info': tint-color($info,85),
-    'warning': tint-color($warning,85),
-    'danger': tint-color($danger,85),
-    'light': tint-color($light,85),
-    'dark': tint-color($dark,85),
+    'primary': tint-color($primary, 90),
+    'secondary': tint-color($secondary, 90),
+    'success': tint-color($success, 90),
+    'info': tint-color($info, 90),
+    'warning': tint-color($warning, 90),
+    'danger': tint-color($danger, 90),
+    'light': tint-color($light, 90),
+    'dark': tint-color($dark, 90),
   ),
   $theme-colors-soft
 );
@@ -176,8 +177,8 @@ $enable-negative-margins: true !default;
 //|   Shadow
 //-----------------------------------------------*/
 
-// $box-shadow: 0 .6375rem .975rem 0 #F4F8FE, 0 3px 6px 0 #F4F8FE !default;
-$box-shadow-sm: 0 1.5625rem 2.8125rem rgba($primary, .15) !default;
+$box-shadow: 0 .6375rem .975rem 0 #F4F8FE, 0 3px 6px 0 #F4F8FE !default;
+$box-shadow-sm: 0 1.5625rem 2.8125rem rgba($gray-500, .075) !default;
 $box-shadow-lg: 0 1rem 4rem rgba($black, 0.175) !default;
 
 //*-----------------------------------------------
@@ -209,35 +210,30 @@ $spacers: map-merge(
 //|   Body
 //-----------------------------------------------*/
 $body-bg: $white !default;
-$body-color: $gray-900 !default;
+$body-color: $gray-700 !default;
 
 //*-----------------------------------------------
 //|   Link
 //-----------------------------------------------*/
-// Style anchor elements.
-
-$link-color:                              $gray-100 !default;
 $link-decoration: none !default;
-$link-hover-decoration: none !default;
-$link-hover-color : $primary;
-$link-hover-decoration: underline;
+$link-hover-decoration: underline !default;
 
 //*-----------------------------------------------
 //|   Components
 //-----------------------------------------------*/
-$border-radius: .5rem !default;
-$border-radius-sm: 0.25rem !default;
-$border-radius-lg: 1rem !default;
+$border-radius: 0.25rem !default;
+$border-radius-sm: 0.625rem !default;
+$border-radius-lg: 1.25rem !default;
 
 //*-----------------------------------------------
 //|   Fonts Families
 //-----------------------------------------------*/
-$font-family-sans-serif: 'Raleway', 'Open Sans', -apple-system, BlinkMacSystemFont,
+$font-family-sans-serif: 'Mulish', 'Poppins', -apple-system, BlinkMacSystemFont,
   'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol' !default; 
+  'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
-$font-family-base: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+$font-family-base: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI',
    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
@@ -284,8 +280,8 @@ $h5-font-size: map_get($font-sizes, 1) !default;
 $h6-font-size: map_get($font-sizes, '-1') !default;
 
 $headings-font-family: $font-family-sans-serif !default;
-$headings-font-weight: $font-weight-bolder !default;
-$headings-color: $gray-1100 !default;
+$headings-font-weight: $font-weight-medium !default;
+$headings-color: $black !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: () !default;
@@ -319,27 +315,34 @@ $blockquote-font-size: $font-size-lg !default;
 //*-----------------------------------------------
 //|   Buttons and Forms
 //-----------------------------------------------*/
-$input-bg           :  $gray-200 !default;
-$input-placeholder-color:    $gray-600 !important;
+$input-btn-padding-y: .56rem !default;
+$input-btn-padding-x: .80rem !default;
+
+$input-btn-padding-y-sm: .25rem !default;
+$input-btn-padding-x-sm: 0.5rem !default;
+
+$input-btn-padding-y-lg: .6rem !default;
+$input-btn-padding-x-lg: 1.8rem !default;
 $input-btn-font-size-lg:  $font-size-base !default;
 
 $btn-reveal-hover-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),
   0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.07),
   0 1px 2px 0 rgba($black, 0.08) !default;
-$btn-font-weight: $font-weight-normal !default;
+$btn-font-weight: $font-weight-medium !default;
 $btn-focus-width: 0 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: 0.2rem !default;
-$btn-border-radius-lg: 0.35rem !default;
+$btn-border-radius: 0.313rem !default;
+$btn-border-radius-lg: .625rem !default;
 
 //*-----------------------------------------------
 //|   Navigation
 //-----------------------------------------------*/
 $navbar-font-size: $font-size-base * 0.8 !default;
-$navbar-light-color: rgba($black, 0.90) !default;
+
+$navbar-light-color: rgba($gray-1000, 0.65) !default;
 $navbar-light-hover-color: rgba($black, 0.95) !default;
-$navbar-light-active-color: rgba($primary, 0.95)  !default;
+$navbar-light-active-color: $dark !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;
 
 $navbar-dark-color: rgba($white, .7) !default;
@@ -411,8 +414,8 @@ $hr-opacity: 1 !default;
 //*-----------------------------------------------
 //|   card
 //-----------------------------------------------*/
-// $card-border-radius:                2.5rem !default;
-$card-cap-bg:                        tint-color($gray-500, 90%) !default;
+$card-border-width:                 2px !default;
+$card-border-radius:                0.625rem !default;
 
 
 //*-----------------------------------------------
@@ -420,40 +423,15 @@ $card-cap-bg:                        tint-color($gray-500, 90%) !default;
 //-----------------------------------------------*/
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color:     $primary !default;
+$carousel-control-color:             $primary !default;
 
 $carousel-indicator-active-bg:       $primary !default;
-$carousel-indicator-width:           6px !default;
-$carousel-indicator-height:          6px !default;
+$carousel-indicator-width:           9px !default;
+$carousel-indicator-height:          9px !default;
 $carousel-indicator-hit-area-height : 0 !default;
-$carousel-control-bg-color: rgba($primary, .3) !important;
 
-$carousel-control-icon-width:        1.8rem !default;
+
 $carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
 $carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
 
-// Navs
-$nav-tabs-link-active-color:        $orange !default;
-$nav-tabs-link-active-border-color: transparent !default;
-$nav-tabs-link-active-bg:          rgba($orange, 0.15) !default;
 
-
-// Accordion
-$accordion-padding-y:                     1.5rem !default;
-$accordion-padding-x:                     2.6rem !default;
-$accordion-bg:                            $gray-100 !default;
-$accordion-border-width:                  $border-width !default;
-$accordion-border-color:                  rgba($white, .125) !default;
-$accordion-border-radius:                 0 !default;
-
-$accordion-button-active-bg:              $gray-100 !default;
-$accordion-button-active-color:           $dark !default;
-
-$accordion-button-focus-border-color:     $white !default;
-$accordion-button-focus-box-shadow:       $light !default;
-
-$accordion-icon-width:                    1.8rem !default;
-$accordion-icon-active-color:             $dark !default;
-
-$accordion-button-icon:         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#EE4D47' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#EE4D47' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E") !default;
