@@ -1,7 +1,7 @@
 import MainLayout from "components/layout/MainLayout";
 import AboutSection from "components/page/homepage/AboutSection";
-import AddressSection from "components/page/homepage/AddressSection";
 import ContactForm from "components/page/homepage/ContactForm";
+import DownloadSection from "components/page/homepage/DownloadSection";
 import HeroSection from "components/page/homepage/HeroSection";
 import NewsLetterSection from "components/page/homepage/NewsLetterSection";
 import ServiceSection from "components/page/homepage/ServiceSection";
@@ -13,9 +13,9 @@ export default function Home() {
       <HeroSection />
       <ServiceSection />
       <AboutSection />
+      <DownloadSection />
       <TestemonialSection />
       <ContactForm />
-      <AddressSection />
       <NewsLetterSection />
     </MainLayout>
   );

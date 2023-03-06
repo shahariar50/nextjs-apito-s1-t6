@@ -1,147 +1,71 @@
 const TestemonialSection = () => {
   return (
-    <section className="py-7">
-      <div className="container-fluid">
-        <div className="row flex-center">
-          <div
-            className="bg-holder bg-size"
-            style={{
-              backgroundImage: "url(assets/img/gallery/quote.png)",
-              backgroundPosition: "top",
-              backgroundSize: "auto",
-              marginLeft: "-270px",
-              marginTop: "-45px",
-            }}
-          ></div>
-
-          <div className="col-md-8 col-lg-5 text-center">
-            <h5 className="text-danger">TESTIMONIAL</h5>
-            <h2>Our Awesome Clients</h2>
-          </div>
-        </div>
+    <section className="py-8" id="testimonial">
+      <div className="container">
         <div
-          className="carousel slide pt-6"
+          className="bg-holder z-index-1"
+          style={{
+            backgroundImage: "url(/img/illustrations/dot.png)",
+            backgroundPosition: "right top",
+            backgroundSize: "auto",
+            marginLeft: "-30px",
+            marginTop: "10px",
+            filter: "contrast(1.5)",
+          }}
+        ></div>
+
+        <div
+          className="bg-holder z-index-1"
+          style={{
+            backgroundImage: "url(/img/illustrations/dot-2.png)",
+            backgroundPosition: "left bottom",
+            backgroundSize: "auto",
+            marginLeft: "-35px",
+            marginTop: "-65px",
+            filter: "contrast(1.5)",
+          }}
+        ></div>
+
+        <div
+          className="carousel slide"
           id="carouselExampleDark"
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="10000">
               <div className="row h-100">
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it.{" "}
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
+                <div className="col-12">
+                  <div className="card text-white bg-primary-gradient">
+                    <div className="card-body p-4 p-md-4 p-lg-7">
+                      <h2 className="fw-bold text-white text-center">
+                        What our customer are saying
+                      </h2>
+                      <hr
+                        className="mx-auto"
+                        style={{ height: "2px", width: "50px" }}
+                      />
+                      <div className="d-md-flex align-items-md-center mt-5 text-center text-md-start">
+                        <picture>
+                          <img
+                            className="img-fluid me-4 me-md-3 me-lg-4"
+                            src="/img/gallery/user-1.png"
+                            width="100"
+                            alt=""
+                          />
+                        </picture>
+                        <div className="w-md-25 my-3">
+                          <h5 className="mb-0 fw-medium text-white">
+                            Edward Newgate
+                          </h5>
+                          <p className="fw-normal mb-0">Founder Circle</p>
                         </div>
-                        <div className="d-flex align-items-center">
-                          <picture>
-                            <img
-                              className="img-fluid"
-                              src="/img/icons/avatar.png"
-                              alt=""
-                            />
-                          </picture>
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Yves Tanguy
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it.
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
-                          <picture>
-                            <img
-                              className="img-fluid"
-                              src="/img/icons/avatar.png"
-                              alt=""
-                            />
-                          </picture>
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Kim Young Jou
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it. .
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
-                          <picture>
-                            <img
-                              className="img-fluid"
-                              src="/img/icons/avatar.png"
-                              alt=""
-                            />
-                          </picture>
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Yves Tanguy
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
+                        <div className="w-md-75">
+                          <p className="card-text ms-md-5">
+                            “Our dedicated patient engagement app and web portal
+                            allow you to access information instantaneously (no
+                            tedeous form, long calls, or administrative hassle)
+                            and securely”
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -149,117 +73,40 @@ const TestemonialSection = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="carousel-item" data-bs-interval="2000">
+            <div className="carousel-item" data-bs-interval="2000">
               <div className="row h-100">
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it.{" "}
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
+                <div className="col-12">
+                  <div className="card text-white bg-primary-gradient">
+                    <div className="card-body p-4 p-md-4 p-lg-7">
+                      <h2 className="fw-bold text-white text-center">
+                        Our dear customers said about us
+                      </h2>
+                      <hr
+                        className="mx-auto"
+                        style={{ height: "2px", width: "50px" }}
+                      />
+                      <div className="d-md-flex align-items-md-center mt-5 text-center text-md-start">
+                        <picture>
                           <img
-                            className="img-fluid"
-                            src="assets/img/icons/avatar.png"
+                            className="img-fluid me-4 me-md-3 me-lg-4"
+                            src="/img/gallery/user-2.png"
+                            width="100"
                             alt=""
                           />
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Yves Tanguy
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
+                        </picture>
+                        <div className="w-md-25 my-3">
+                          <h5 className="mb-0 fw-medium text-white">
+                            Jhon Doe
+                          </h5>
+                          <p className="fw-normal mb-0">UI/UX Designer</p>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it.{" "}
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
-                          <img
-                            className="img-fluid"
-                            src="assets/img/icons/avatar.png"
-                            alt=""
-                          />
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Kim Young Jou
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it. .
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
-                          <img
-                            className="img-fluid"
-                            src="assets/img/icons/avatar.png"
-                            alt=""
-                          />
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Yves Tanguy
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
+                        <div className="w-md-75">
+                          <p className="card-text ms-md-5">
+                            “Our dedicated patient engagement app and web portal
+                            allow you to access information instantaneously (no
+                            tedeous form, long calls, or administrative hassle)
+                            and securely”
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -269,125 +116,62 @@ const TestemonialSection = () => {
             </div>
             <div className="carousel-item">
               <div className="row h-100">
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it.{" "}
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
+                <div className="col-12">
+                  <div className="card text-white bg-primary-gradient">
+                    <div className="card-body p-4 p-md-4 p-lg-7">
+                      <h2 className="fw-bold text-white text-center">
+                        Our dear customers said about us
+                      </h2>
+                      <hr
+                        className="mx-auto"
+                        style={{ height: "2px", width: "50px" }}
+                      />
+                      <div className="d-md-flex align-items-md-center mt-5 text-center text-md-start">
+                        <picture>
                           <img
-                            className="img-fluid"
-                            src="assets/img/icons/avatar.png"
+                            className="img-fluid me-4 me-md-3 me-lg-4"
+                            src="/img/gallery/user-3.png"
+                            width="100"
                             alt=""
                           />
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Yves Tanguy
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
+                        </picture>
+                        <div className="w-md-25 my-3">
+                          <h5 className="mb-0 fw-medium text-white">
+                            Jeny Doe
+                          </h5>
+                          <p className="fw-normal mb-0">Web Designer</p>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        “I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it.{" "}
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
-                          <img
-                            className="img-fluid"
-                            src="assets/img/icons/avatar.png"
-                            alt=""
-                          />
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Kim Young Jou
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-3 mb-md-0">
-                  <div className="card h-100 card-span p-3">
-                    <div className="card-body">
-                      <h5 className="mb-0 text-primary">Fantastic service!</h5>
-                      <p className="card-text pt-3">
-                        I purchased a phone from an e-commerce site, and this
-                        courier service provider assisted me in getting it
-                        delivered to my home. I received my phone within one
-                        day, and I was really satisfied with their service when
-                        I received it. .
-                      </p>
-                      <div className="d-xl-flex justify-content-between align-items-center">
-                        <div className="d-flex align-items-center mb-3">
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                          <i className="fas fa-star text-primary me-1"></i>
-                        </div>
-                        <div className="d-flex align-items-center">
-                          <img
-                            className="img-fluid"
-                            src="assets/img/icons/avatar.png"
-                            alt=""
-                          />
-                          <div className="flex-1 ms-3">
-                            <h6 className="mb-0 fs--1 text-1000 fw-medium">
-                              Yves Tanguy
-                            </h6>
-                            <p className="fs--2 fw-normal mb-0">
-                              Chief Executive, DLF
-                            </p>
-                          </div>
+                        <div className="w-md-75">
+                          <p className="card-text ms-md-5">
+                            “Our dedicated patient engagement app and web portal
+                            allow you to access information instantaneously (no
+                            tedeous form, long calls, or administrative hassle)
+                            and securely”
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
-          <div className="row px-3 px-md-0 mt-6">
-            <div className="col-12 position-relative">
+          <div className="row mt-4 flex-center">
+            <div className="col-4 col-sm-5 text-end position-relative z-index-2">
+              <a
+                className="carousel-control-prev carousel-icon z-index-2"
+                href="#carouselExampleDark"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </a>
+            </div>
+            <div className="col-auto position-relative z-index-2">
               <ol className="carousel-indicators">
                 <li
                   className="active"
@@ -403,6 +187,20 @@ const TestemonialSection = () => {
                   data-bs-slide-to="2"
                 ></li>
               </ol>
+            </div>
+            <div className="col-4 col-sm-5 position-relative z-index-2">
+              <a
+                className="carousel-control-next carousel-icon z-index-2"
+                href="#carouselExampleDark"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </a>
             </div>
           </div>
         </div>
