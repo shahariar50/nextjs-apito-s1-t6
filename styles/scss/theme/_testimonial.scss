@@ -1,7 +1,15 @@
-
-
 // //*----------------------------- from bootstrap carousel ------------------*//
-
+#testimonial {
+  .swiper {
+    .swiper-wrapper {
+      padding-bottom: 50px;
+    }
+  }
+  .navigation {
+    position: relative;
+    top: -35px;
+  }
+}
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -29,28 +37,35 @@
 }
 .carousel-control-prev {
   left: 0;
-  background-image: if($enable-gradients, linear-gradient(90deg, rgba($black, .25), rgba($black, .001)), null);
+  background-image: if(
+    $enable-gradients,
+    linear-gradient(90deg, rgba($black, 0.25), rgba($black, 0.001)),
+    null
+  );
 }
 .carousel-control-next {
   right: 0;
-  background-image: if($enable-gradients, linear-gradient(270deg, rgba($black, .25), rgba($black, .001)), null);
+  background-image: if(
+    $enable-gradients,
+    linear-gradient(270deg, rgba($black, 0.25), rgba($black, 0.001)),
+    null
+  );
 }
 
 .carousel-indicators {
   position: static;
   justify-content: start;
-  margin:  0;
+  margin: 0;
 
- li{
-  border-radius: 50%;
-
- }
+  li {
+    border-radius: 50%;
+  }
 
   .active {
     opacity: $carousel-indicator-active-opacity;
     background-color: $primary;
     width: 9px;
-    height:9px;
+    height: 9px;
   }
 }
 
@@ -62,4 +77,3 @@
   right: auto;
   left: 45px;
 }
-
